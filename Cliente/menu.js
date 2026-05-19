@@ -1,8 +1,8 @@
 // --- Sección cliente ---
 function mostrarMenu() {
-    console.log(\n =================================);
+    console.log('\\n =================================');
     console.log(`          MENÚ DEL DÍA           `);
-    console.log(=================================);
+    console.log('=================================');
 
     if (catalogo.length === 0) {
         console.log(` El catálogo está vacío.`);
@@ -11,13 +11,13 @@ function mostrarMenu() {
             console.log(` [${catalogo[i].id}] ${catalogo[i].nombre} -> $${catalogo[i].precio}`);
         }
     }
-    console.log(=================================\n);
+    console.log('=================================\n');
 }
 
 function mostrarPedidos() {
-    console.log(\n---------------------------------);
+    console.log('\\n---------------------------------');
     console.log(`          TICKET DE CAJA         `);
-    console.log(---------------------------------);
+    console.log('---------------------------------');
 
     if (listaPedidos.length === 0) {
         console.log(` No hay pedidos registrados.`);
@@ -27,7 +27,7 @@ function mostrarPedidos() {
         }
     }
 
-    console.log(---------------------------------);
+    console.log('---------------------------------');
     console.log(` TOTAL A PAGAR: $${totalAcumulado}`);
-    console.log(---------------------------------\n);
+    console.log('---------------------------------\n');
 }
