@@ -26,4 +26,4 @@ function procesarNotificacionCaja(estado, motivo, callback) {
     } else {
         callback("Caja notificada: Pedido cancelado debido a: " + motivo + ".");
     }
-}
+

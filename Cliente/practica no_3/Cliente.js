@@ -40,3 +40,4 @@ function mostrarPedidos() {
         console.log(`TOTAL:    $${total.toFixed(2)}`);
     }
 }
+
