@@ -15,10 +15,13 @@ export default function App() {
         <Text>--------------------------------------------</Text>
         <Saludo></Saludo>
         <Saludo/>
-        <Text>--------------------------------------------</Text>
-
         <Saludo2/>
-        <Perfil/>
+        <Text>--------------------------------------------</Text>
+        
+        
+        <Perfil nombre="Jorge" carrera="ISC" materia="Programación Movil" cuatri="Cuatrimestre 9"/>
+         <Text>--------------------------------------------</Text>
+         <Perfil nombre="Maria" carrera="LAGE" materia="Las escondidas" cuatri="Cuatrimestre 9"/>
 
       <StatusBar style="auto" />
     </View>
