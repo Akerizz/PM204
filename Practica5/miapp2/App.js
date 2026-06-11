@@ -9,19 +9,27 @@ import { Perfil } from './components/Perfil';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Image source={require('./assets/wave.png')} />
+      
+        <Perfil style={styles.targetaverde}
+        nombre="Jorge" 
+        carrera="ISC" 
+        materia="Programación Movil" 
+        cuatri="Cuatrimestre 9"
+        />
+         
+         <Perfil style={styles.targetaroja}
+         nombre="Maria" 
+         carrera="LAGE" 
+         materia="Las escondidas" 
+         cuatri="Cuatrimestre 9"
+         />
 
-      <Text>Hola mundo RN!</Text>
-        <Text>--------------------------------------------</Text>
-        <Saludo></Saludo>
-        <Saludo/>
-        <Saludo2/>
-        <Text>--------------------------------------------</Text>
-        
-        
-        <Perfil nombre="Jorge" carrera="ISC" materia="Programación Movil" cuatri="Cuatrimestre 9"/>
-         <Text>--------------------------------------------</Text>
-         <Perfil nombre="Maria" carrera="LAGE" materia="Las escondidas" cuatri="Cuatrimestre 9"/>
+         <Perfil style={styles.targetaverde}
+        nombre="Jorge2" 
+        carrera="ISC" 
+        materia="Programación Movil" 
+        cuatri="Cuatrimestre 9"
+        />
 
       <StatusBar style="auto" />
     </View>
@@ -34,6 +42,15 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-evenly',
+    flexDirection: 'row',
+
   },
+    targetaverde:{
+      backgroundColor: '#6BDB6B',
+    },
+    targetaroja:{
+      backgroundColor: '#9c120b',  
+    },
+    
 });
