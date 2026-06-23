@@ -1,14 +1,15 @@
 //Zona 1 de Importaciones, componentes y archivos 
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, Button } from 'react-native';
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import TargetasScreen from './TargetasScreen';
 import SafeScreen from './SafeScreen';
-
+import PresseableScreen from './PresseableScreen';
+import ModalBottomSheetScreen from './ModalBottomSheetScreen';
 
 //zona 2 : Main y componentes
 export default function MenuScreen() {
-const[screen, setScreen] = useState('menu');
+const [screen, setScreen] = useState('menu');
 
     switch(screen){
         case 'targetas':
@@ -16,7 +17,9 @@ const[screen, setScreen] = useState('menu');
         case 'safeArea':
             return <SafeScreen/>;  
         case 'presseable':
-            return <Presseable/>;
+            return <PresseableScreen/>;
+        case 'modal':
+            return <ModalBottomSheetScreen/>;
         case 'menu':
         default:       
   
@@ -30,6 +33,9 @@ const[screen, setScreen] = useState('menu');
       </View>
 
       <View> <Button title='Practica Presseable' onPress={() => setScreen('presseable')} />
+      </View>
+
+      <View> <Button title='Practica Modal' onPress={() => setScreen('modal')} />
       </View>
 
       <StatusBar style="auto" />
