@@ -81,7 +81,7 @@ export default function App() {
         value={email}
         onChangeText={setEmail}
         placeholder="usuario@ejemplo.com"
-        keyboardType="email-address"
+        keyboardType="email-address" 
         autoCapitalize="none"
         placeholderTextColor="#aaa"
         style={styles.input}
