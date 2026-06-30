@@ -7,6 +7,7 @@ import SafeScreen from './SafeScreen';
 import PresseableScreen from './PresseableScreen';
 import ModalBottomSheetScreen from './ModalBottomSheetScreen';
 import TextInputAlerts from './TextInputAlerts';
+import FlatListScreen from './FlatListScreen';
 
 //zona 2 : Main y componentes
 export default function MenuScreen() {
@@ -23,6 +24,8 @@ export default function MenuScreen() {
       return <ModalBottomSheetScreen/>;
     case 'textinput':
       return <TextInputAlerts/>;
+    case 'flatlist':
+      return <FlatListScreen/>;
     case 'menu':
     default:       
       return (
@@ -41,6 +44,9 @@ export default function MenuScreen() {
           </View>
           <View> 
             <Button title='Practica TextInput' onPress={() => setScreen('textinput')} />
+          </View>
+          <View> 
+            <Button title='Practica FlatList' onPress={() => setScreen('flatlist')} />
           </View>
           <StatusBar style="auto" />
         </View>
