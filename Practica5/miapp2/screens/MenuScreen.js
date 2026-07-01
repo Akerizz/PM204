@@ -8,6 +8,7 @@ import PresseableScreen from './PresseableScreen';
 import ModalBottomSheetScreen from './ModalBottomSheetScreen';
 import TextInputAlerts from './TextInputAlerts';
 import FlatListScreen from './FlatListScreen';
+import ImageBackgroundScreen from './ImageBackgroundScreen';
 
 //zona 2 : Main y componentes
 export default function MenuScreen() {
@@ -26,6 +27,8 @@ export default function MenuScreen() {
       return <TextInputAlerts/>;
     case 'flatlist':
       return <FlatListScreen/>;
+    case 'imagebackground':
+      return <ImageBackgroundScreen/>;
     case 'menu':
     default:       
       return (
@@ -47,6 +50,9 @@ export default function MenuScreen() {
           </View>
           <View> 
             <Button title='Practica FlatList' onPress={() => setScreen('flatlist')} />
+          </View>
+          <View> 
+            <Button title='Practica ImageBackground' onPress={() => setScreen('imagebackground')} />
           </View>
           <StatusBar style="auto" />
         </View>
